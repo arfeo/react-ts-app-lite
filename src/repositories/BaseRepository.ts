@@ -1,7 +1,6 @@
-import { HttpDataSource } from '../sources/HttpDataSource';
+import { HttpDataSource } from '../utils/HttpDataSource';
 
 class BaseRepository<TProps extends {} = {}> {
-  protected props: TProps | undefined;
   protected http: HttpDataSource;
 
   protected constructor() {
